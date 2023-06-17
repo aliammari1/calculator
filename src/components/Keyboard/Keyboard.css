@@ -1,0 +1,8 @@
+.keyboard {
+  display: grid;
+  grid-template-columns: 75% 25%;
+  grid-template-rows: 75% 25%;
+  width: 80vw;
+  height: 75vh;
+  margin: 0 auto;
+}

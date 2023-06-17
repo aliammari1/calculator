@@ -11,9 +11,7 @@
 }
 
 .numbers {
-  width: 80vh;
-  height: 100vh;
+  height: 75vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin: 0 auto;
 }
