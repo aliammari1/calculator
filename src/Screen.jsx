@@ -1,11 +1,11 @@
 import React from "react";
 import "./Screen.css";
 
-function Screen() {
+function Screen(props) {
   return (
     <div>
       <div className="screen">
-        <p className="input">0</p>
+        <p className="input">{props.input}</p>
       </div>
     </div>
   );
