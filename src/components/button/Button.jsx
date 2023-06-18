@@ -3,8 +3,8 @@ import "./Button.css";
 
 function Button(props) {
   const handleClick = () => {
-    console.table(props);
-    props.handleClick(props.value);
+    console.log(props);
+    props.handleClick(props.label);
   };
   return (
     <div className="btn" onClick={handleClick}>
