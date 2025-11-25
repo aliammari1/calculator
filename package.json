@@ -1,40 +1,31 @@
 {
   "name": "calculator",
-  "version": "0.1.0",
-  "private": true,
-  "main": "electron.js",
+  "version": "2.0.0",
+  "description": "Feature-rich calculator application with React and Electron",
+  "homepage": "https://github.com/aliammari1/calculator",
+  "license": "Custom Commercial Use License",
+  "author": "Ali Ammari",
+  "main": "public/electron.js",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "electron-squirrel-startup": "^1.1.1",
+    "axios": "^1.7.0"
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.1.0",
+    "concurrently": "^9.0.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
+    "@testing-library/react": "^16.0.0",
+    "@testing-library/jest-dom": "^6.5.0"
   },
   "scripts": {
-    "electron:start": "electron .",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "react-start": "react-scripts start",
+    "react-build": "react-scripts build",
+    "react-test": "react-scripts test",
+    "electron-start": "wait-on http://localhost:3000 && electron .",
+    "start": "concurrently \"npm run react-start\" \"npm run electron-start\"",
+    "build": "npm run react-build && electron-builder"
   }
 }
