@@ -7,18 +7,18 @@
   "author": "Ali Ammari",
   "main": "public/electron.js",
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "electron-squirrel-startup": "^1.1.1",
-    "axios": "^1.7.0"
+    "axios": "^1.13.2",
+    "electron-squirrel-startup": "^1.0.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
-    "electron": "^33.0.0",
-    "electron-builder": "^25.1.0",
-    "concurrently": "^9.0.0",
-    "react-scripts": "5.0.1",
-    "@testing-library/react": "^16.0.0",
-    "@testing-library/jest-dom": "^6.5.0"
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.0",
+    "concurrently": "^9.2.1",
+    "electron": "^39.2.3",
+    "electron-builder": "^26.0.12",
+    "react-scripts": "5.0.1"
   },
   "scripts": {
     "react-start": "react-scripts start",
